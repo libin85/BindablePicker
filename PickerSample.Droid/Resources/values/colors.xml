@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+  <color name="primary">#EA6C5B</color>
+  <color name="primaryDark">#1976D2</color>
+  <color name="accent">#FFC107</color>
+  <color name="windowBackground">#305D7A</color>
+  <color name="splashBackground">#305D7A</color>
+	<color name="splashBackgroundEnd">#4f3b5b</color>
+	<color name="itemColor">#212942</color>
+	<color name="bb_darkBackgroundColor">#305D7A</color>
+	<color name="bb_inActiveBottomBarItemColor">#EA6C5B</color>
+	
+</resources>

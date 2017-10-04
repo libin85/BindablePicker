@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "targets": {
+    ".NETStandard,Version=v1.5": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "": [],
+    ".NETStandard,Version=v1.5": []
+  },
+  "packageFolders": {
+    "/Users/libinjoseph/.nuget/packages/": {}
+  },
+  "project": {
+    "restore": {
+      "projectUniqueName": "/Users/libinjoseph/Projects/PickerSample/PickerSample/PickerSample.csproj",
+      "projectName": "PickerSample",
+      "projectPath": "/Users/libinjoseph/Projects/PickerSample/PickerSample/PickerSample.csproj",
+      "projectJsonPath": "/Users/libinjoseph/Projects/PickerSample/PickerSample/project.json",
+      "projectStyle": "ProjectJson"
+    },
+    "frameworks": {
+      "netstandard1.5": {}
+    }
+  }
+}

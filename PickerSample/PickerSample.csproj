@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <PackageTargetFallback>$(PackageTargetFallback);portable-win+net45+wp8+win81+wpa8</PackageTargetFallback>
+    </PropertyGroup>
+    <ItemGroup>
+      <PackageReference Include="Prism.Unity.Forms" Version="6.3.0" />
+      <PackageReference Include="Xamarin.Forms" Version="2.4.0.282" />
+      <PackageReference Include="Prism.Forms" Version="6.3.0" />
+      <PackageReference Include="Unity" Version="4.0.1" />
+      <PackageReference Include="Prism.Core" Version="6.3.0" />
+    </ItemGroup>
+    <ItemGroup>
+      <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="App.xaml.cs">
+        <DependentUpon>*.xaml</DependentUpon>
+      </Compile>
+      <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\MainPage.xaml.cs">
+        <DependentUpon>*.xaml</DependentUpon>
+      </Compile>
+      <Compile Update="Controls\LabelWithPickerControl.xaml.cs">
+        <DependentUpon>LabelWithPickerControl.xaml</DependentUpon>
+      </Compile>
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Properties\" />
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Include="Views\MainPage.xaml">
+        <SubType>Designer</SubType>
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Include="App.xaml">
+        <SubType>Designer</SubType>
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
+      <EmbeddedResource Include="Controls\LabelWithPickerControl.xaml">
+        <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      </EmbeddedResource>
+    </ItemGroup>
+</Project>

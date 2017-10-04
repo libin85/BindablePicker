@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prism:PrismApplication xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:prism="clr-namespace:Prism.Unity;assembly=Prism.Unity.Forms" 
+    xmlns:controls="clr-namespace:PickerSample.Controls;assembly=PickerSample"
+    x:Class="PickerSample.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--Colors Start-->
+
+            <Color x:Key="PrimaryColor">#EA6C5B</Color>
+            <Color x:Key="SecondaryTxtColor">#103145</Color>
+            <!--Colors End-->
+
+            
+            <Style TargetType="Label" x:Key="CustomConrtolLabelStyle">
+              
+              <Setter Property="TextColor" Value="{StaticResource SecondaryTxtColor}" />
+              <Setter Property="FontSize" Value="12" />
+              <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+
+            <Style TargetType="controls:CustomPicker" x:Key="CustomConrtolPickerStyle">
+              
+              <Setter Property="TextColor" Value="{StaticResource PrimaryColor}" />
+
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+        
+</prism:PrismApplication>
